@@ -1,7 +1,7 @@
 #ifndef _LEFT_H_
 #define _LEFT_H_
 
-#include "topmost.h"
+#include "top.h"
 
 // Nothing intentionally
 
