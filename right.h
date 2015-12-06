@@ -3,6 +3,14 @@
 
 #include "top.h"
 
-// Nothing intentionally
+class DummyRight {
+public:
+	DummyRight();
+	
+	virtual ~DummyRight();
+
+private:
+	// nothing	
+};
 
 #endif  // _RIGHT_H_

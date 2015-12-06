@@ -20,7 +20,7 @@ class ClassWithStaticVar
 	private:
         // Left intentionally uninistantiated
 		static ClassWithStaticVar instance;
-        ClassWithNonTrivialDtor m_nastyObject;
+        ClassWithNonTrivialDtor* m_nastyObject;
 	};	
 
 #endif  // _TOP_MOST_LIBRARY_H

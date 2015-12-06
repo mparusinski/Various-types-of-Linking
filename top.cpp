@@ -17,12 +17,13 @@ ClassWithNonTrivialDtor::~ClassWithNonTrivialDtor()
 }
 
 ClassWithStaticVar::ClassWithStaticVar(int initValue)
-    : m_nastyObject(initValue)
 {
     std::cout << "Construction static object with value " << initValue << std::endl;
+    m_nastyObject = new ClassWithNonTrivialDtor(initValue);
 }
 
 ClassWithStaticVar::~ClassWithStaticVar()
 {
     std::cout << "Destruction static object" << std::endl;
+    delete m_nastyObject;
 }
