@@ -4,10 +4,10 @@
 #include <new>
 
 ClassWithNonTrivialDtor::ClassWithNonTrivialDtor(int initValue)
-    : m_heapInt(nullptr)
+    : m_heapInt(NULL)
 {
     m_heapInt = new int;
-    if (m_heapInt != nullptr)
+    if (m_heapInt != NULL)
         *m_heapInt = initValue;
 }
 
