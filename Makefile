@@ -13,6 +13,9 @@ right.o:
 main_classic:
 	g++ main.cpp right.cpp left.cpp top.cpp -o main_classic
 
+main_static: libleft_static.a libright_static.a
+	g++ -o main_static main.cpp libleft_static.a libright_static.a
+
 libleft_static.a: left.o
 	ar rcs libleft_static.a left.o
 
