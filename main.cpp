@@ -5,5 +5,6 @@
 
 int main() {
 	DummyLeft dummyLeftObj;
+	DummyRight dummyRightObj;
 	std::cout << "This application does not nothing" << std::endl;
 }
